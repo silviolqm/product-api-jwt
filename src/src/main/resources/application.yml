@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: product-api-jwt
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://keycloak:8080/realms/product-api
+    datasource:
+        url: jdbc:postgresql://postgres:5432/productdb
+        username: superuser
+        password: superpass
+server:
+      port: 9090
