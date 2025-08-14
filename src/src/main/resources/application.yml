@@ -7,6 +7,10 @@ spring:
                 jwt:
                     issuer-uri: http://localhost:8180/realms/product-api
     datasource:
-        url: jdbc:postgresql://postgres:5432/productdb
+        url: jdbc:postgresql://localhost:5432/productdb
         username: superuser
         password: superpass
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
